@@ -22,3 +22,44 @@
   text-align: right;
   font-style: bold;
 }
+
+img {
+  width: 200px;
+}
+
+#flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.container {
+  width: 100%;
+}
+
+ul > li {
+  list-style: none;
+}
+
+button {
+  color: green;
+  background-color: salmon;
+  width: 20%;
+}
+
+button:hover {
+  background-color: green;
+  color: salmon;
+}
+
+@media screen and (max-width: 800px) {
+  #flex {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #flex {
+    grid-template-columns: 1fr;
+  }
+}
